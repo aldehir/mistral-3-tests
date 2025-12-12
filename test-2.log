@@ -1,0 +1,107 @@
+[
+  {
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "id": "6xc0t9okzOK7n36Xg051TkD9fxIAHxfd",
+        "function": {
+          "arguments": "{\"a\": \"2\", \"b\": \"3\"}",
+          "name": "multiply_number"
+        },
+        "type": "function"
+      }
+    ],
+    "content": "Let's solve the equations step by step, focusing only on those that involve only numbers.\n\n### Equation 1: 6 + 2 \u00d7 3\nFirst, we perform the multiplication:"
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "6xc0t9okzOK7n36Xg051TkD9fxIAHxfd",
+    "name": "multiply_number",
+    "content": "6.0"
+  },
+  {
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "id": "NfvGzGN2KiFrY19l6NI69FPEn47gGfOx",
+        "function": {
+          "arguments": "{\"a\": \"6\", \"b\": \"6.0\"}",
+          "name": "add_number"
+        },
+        "type": "function"
+      }
+    ],
+    "content": "Now, we add the result to 6:"
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "NfvGzGN2KiFrY19l6NI69FPEn47gGfOx",
+    "name": "add_number",
+    "content": "12.0"
+  },
+  {
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "id": "GI1XGP1dFG2x0YQxYKhebPAerOWOiewl",
+        "function": {
+          "arguments": "{\"a\": \"8\", \"b\": \"2\"}",
+          "name": "add_number"
+        },
+        "type": "function"
+      }
+    ],
+    "content": "The result of Equation 1 is **12**.\n\n### Equation 3: 19 - (8 + 2) + 1\nFirst, we solve the parentheses:"
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "GI1XGP1dFG2x0YQxYKhebPAerOWOiewl",
+    "name": "add_number",
+    "content": "10.0"
+  },
+  {
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "id": "b4gPqDVAFhuWWHF50CBuYy8jaP9mBouK",
+        "function": {
+          "arguments": "{\"a\": \"19\", \"b\": \"10.0\"}",
+          "name": "substract_number"
+        },
+        "type": "function"
+      }
+    ],
+    "content": "Now, we subtract the result from 19:"
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "b4gPqDVAFhuWWHF50CBuYy8jaP9mBouK",
+    "name": "substract_number",
+    "content": "9.0"
+  },
+  {
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "id": "V3uZFXA5DfHqjKrYJj33IJ8ixfm2gGT0",
+        "function": {
+          "arguments": "{\"a\": \"9.0\", \"b\": \"1\"}",
+          "name": "add_number"
+        },
+        "type": "function"
+      }
+    ],
+    "content": "Finally, we add 1 to the result:"
+  },
+  {
+    "role": "tool",
+    "tool_call_id": "V3uZFXA5DfHqjKrYJj33IJ8ixfm2gGT0",
+    "name": "add_number",
+    "content": "10.0"
+  },
+  {
+    "role": "assistant",
+    "tool_calls": null,
+    "content": "The result of Equation 3 is **10**.\n\n### Summary of Results:\n- Equation 1: 6 + 2 \u00d7 3 = **12**\n- Equation 3: 19 - (8 + 2) + 1 = **10**"
+  }
+]
